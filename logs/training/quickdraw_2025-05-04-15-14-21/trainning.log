@@ -1,0 +1,18 @@
+2025-05-04 15:14:21,731 - INFO - [in /mnt/d/python2/Quick draw/train.py:217] save log to 'logs/training/quickdraw_2025-05-04-15-14-21/trainning.log'
+2025-05-04 15:14:27,720 - INFO - [in /mnt/d/python2/Quick draw/train.py:246] ===> epoch[0/100] start
+2025-05-04 15:18:44,314 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/best_checkpoint.pth
+2025-05-04 15:18:44,377 - INFO - [in /mnt/d/python2/Quick draw/train.py:86] Model saved to checkpoint/best_model.pth
+2025-05-04 15:18:44,555 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/last_checkpoint.pth
+2025-05-04 15:18:44,556 - INFO - [in /mnt/d/python2/Quick draw/train.py:246] ===> epoch[1/100] start
+2025-05-04 15:23:17,968 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/best_checkpoint.pth
+2025-05-04 15:23:18,054 - INFO - [in /mnt/d/python2/Quick draw/train.py:86] Model saved to checkpoint/best_model.pth
+2025-05-04 15:23:18,260 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/last_checkpoint.pth
+2025-05-04 15:23:18,260 - INFO - [in /mnt/d/python2/Quick draw/train.py:246] ===> epoch[2/100] start
+2025-05-04 15:27:35,976 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/best_checkpoint.pth
+2025-05-04 15:27:36,052 - INFO - [in /mnt/d/python2/Quick draw/train.py:86] Model saved to checkpoint/best_model.pth
+2025-05-04 15:27:36,231 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/last_checkpoint.pth
+2025-05-04 15:27:36,232 - INFO - [in /mnt/d/python2/Quick draw/train.py:246] ===> epoch[3/100] start
+2025-05-04 15:32:05,743 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/best_checkpoint.pth
+2025-05-04 15:32:05,800 - INFO - [in /mnt/d/python2/Quick draw/train.py:86] Model saved to checkpoint/best_model.pth
+2025-05-04 15:32:05,946 - INFO - [in /mnt/d/python2/Quick draw/train.py:92] Check point saved to checkpoint/last_checkpoint.pth
+2025-05-04 15:32:05,947 - INFO - [in /mnt/d/python2/Quick draw/train.py:246] ===> epoch[4/100] start
