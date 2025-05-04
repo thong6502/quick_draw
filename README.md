@@ -6,6 +6,13 @@
 
 Dự án này là một ứng dụng vẽ tương tác sử dụng camera webcam kết hợp với nhận diện cử chỉ tay thông qua MediaPipe và mô hình nhận diện hình vẽ được đào tạo từ bộ dữ liệu QuickDraw.
 
+## Demo
+
+<p align="center">
+  <img src="demo.gif" width=600><br/>
+  <i>Camera app demo</i>
+</p>
+
 ## Tính năng chính
 
 - Vẽ bằng ngón tay thông qua camera webcam
@@ -28,12 +35,6 @@ Dự án này là một ứng dụng vẽ tương tác sử dụng camera webcam
 
 3. **Thoát ứng dụng:**
    - Nhấn phím 'q' để thoát khỏi ứng dụng
-
-## Demo
-<p align="center">
-  <img src="demo.gif" width=600><br/>
-  <i>Camera app demo</i>
-</p>
 
 ## Cấu trúc dự án
 
