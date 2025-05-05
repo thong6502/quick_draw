@@ -1,0 +1,1 @@
+sudo docker run --gpus all --rm -v "$PWD":/app deep_learning

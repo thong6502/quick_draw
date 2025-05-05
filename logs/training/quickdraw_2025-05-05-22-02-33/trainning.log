@@ -1,0 +1,2 @@
+2025-05-05 22:02:33,744 - INFO - [in /app/train.py:217] save log to 'logs/training/quickdraw_2025-05-05-22-02-33/trainning.log'
+2025-05-05 22:02:39,506 - INFO - [in /app/train.py:246] ===> epoch[4/100] start
