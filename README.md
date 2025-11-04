@@ -1,10 +1,10 @@
 <p align="center">
- <h1 align="center">Ứng dụng Quick Draw với Nhận diện Cử chỉ Tay</h1>
+ <h1 align="center">Quick Draw App with Hand Gesture Recognition</h1>
 </p>
 
-## Giới thiệu
+## Introduction
 
-Dự án này là một ứng dụng vẽ tương tác sử dụng camera webcam kết hợp với nhận diện cử chỉ tay thông qua MediaPipe và mô hình nhận diện hình vẽ được đào tạo từ bộ dữ liệu QuickDraw.
+This project is an interactive drawing app that uses a webcam together with hand gesture recognition via MediaPipe and a drawing recognition model trained on the QuickDraw dataset.
 
 ## Demo
 
@@ -13,94 +13,98 @@ Dự án này là một ứng dụng vẽ tương tác sử dụng camera webcam
   <i>Camera app demo</i>
 </p>
 
-## Tính năng chính
+## Main Features
 
-- Vẽ bằng ngón tay thông qua camera webcam
-- Nhận diện cử chỉ tay để chọn màu sắc và công cụ vẽ
-- Xóa vùng vẽ bằng công cụ tẩy
-- Nhận diện hình vẽ theo thời gian thực
-- Hỗ trợ nhiều màu sắc khác nhau
+* Draw using your finger through the webcam
+* Recognize hand gestures to select colors and drawing tools
+* Erase drawings using an eraser tool
+* Real-time drawing recognition
+* Support for multiple colors
 
-## Cách sử dụng
+## How to Use
 
-1. **Chế độ vẽ:**
-   - Giơ ngón trỏ lên (ngón giữa cụp xuống) để vẽ
-   - Giơ cả ngón trỏ và ngón giữa lên để chọn công cụ và màu sắc
-   - Đưa ngón trỏ và ngón giữa gần nhau để chọn màu/công cụ từ thanh công cụ
+1. **Drawing Mode:**
 
-2. **Nhận diện hình vẽ:**
-   - Nhấn phím Space để chuyển đổi giữa chế độ vẽ và chế độ nhận diện
-   - Khi ở chế độ nhận diện, hệ thống sẽ xử lý và nhận diện hình vẽ của bạn
-   - Nhấn Space lần nữa để xóa hình vẽ và quay lại chế độ vẽ
+   * Raise your index finger (middle finger down) to draw
+   * Raise both index and middle fingers to choose a tool or color
+   * Bring the index and middle fingers close together to select from the toolbar
 
-3. **Thoát ứng dụng:**
-   - Nhấn phím 'q' để thoát khỏi ứng dụng
+2. **Drawing Recognition:**
 
-## Cấu trúc dự án
+   * Press the Space key to switch between drawing and recognition mode
+   * In recognition mode, the system will process and identify your drawing
+   * Press Space again to clear the canvas and return to drawing mode
+
+3. **Exit the App:**
+
+   * Press the 'q' key to quit the application
+
+## Project Structure
 
 ```
 .
-├── camera_app.py         # Ứng dụng chính với camera
-├── painting_app.py       # Phiên bản đơn giản của ứng dụng vẽ
-├── train.py              # Script huấn luyện mô hình QuickDraw
-├── src/                  # Thư mục mã nguồn
-│   ├── config.py         # Cấu hình và danh sách các lớp
-│   ├── model.py          # Định nghĩa mô hình CNN cho QuickDraw
-│   ├── utils.py          # Các hàm tiện ích
+├── camera_app.py         # Main camera application
+├── painting_app.py       # Simple drawing app version
+├── train.py              # QuickDraw model training script
+├── src/                  # Source code folder
+│   ├── config.py         # Configurations and class list
+│   ├── model.py          # CNN model definition for QuickDraw
+│   ├── utils.py          # Utility functions
 │   └── ...
-├── header/               # Thư mục chứa hình ảnh thanh công cụ
-├── images/               # Thư mục chứa hình ảnh của các lớp QuickDraw
-├── data/                 # Dữ liệu huấn luyện
-└── checkpoint/           # Mô hình đã huấn luyện
+├── header/               # Toolbar images
+├── images/               # QuickDraw class images
+├── data/                 # Training data
+└── checkpoint/           # Trained model
 ```
 
-## Cài đặt
+## Installation
 
-1. Cài đặt các thư viện cần thiết:
+1. Install required libraries:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Chạy ứng dụng:
+2. Run the app:
 
 ```bash
 python camera_app.py
 ```
 
-## Tùy chọn dòng lệnh
+## Command Line Options
 
 ```
 python camera_app.py [options]
 
 Options:
-  --model-path, -m       Đường dẫn tới mô hình (mặc định: "checkpoint/best_model.pth")
-  --header-path, -hp     Đường dẫn tới thư mục hình ảnh thanh công cụ (mặc định: "header")
-  --image-path, -ip      Đường dẫn tới thư mục hình ảnh kết quả (mặc định: "images")
-  --brush-thickness, -b  Độ dày của bút vẽ (mặc định: 15)
-  --eraser-thickness, -e Độ dày của cục tẩy (mặc định: 30)
+  --model-path, -m       Path to the model (default: "checkpoint/best_model.pth")
+  --header-path, -hp     Path to the toolbar image folder (default: "header")
+  --image-path, -ip      Path to the result image folder (default: "images")
+  --brush-thickness, -b  Brush thickness (default: 15)
+  --eraser-thickness, -e Eraser thickness (default: 30)
 ```
 
-## Các lớp nhận diện
+## Recognized Classes
 
-Hệ thống hiện tại hỗ trợ nhận diện các lớp sau:
+The current system supports recognition of the following classes:
 
-- apple (táo)
-- axe (rìu)
-- banana (chuối)
-- barn (nhà kho)
-- bat (dơi)
+* apple
+* axe
+* banana
+* barn
+* bat
 
-## Thử nghiệm
+## Experiment
 
 <img src="logs/confusion_matrix.png" width="800">
 
-## Bộ dữ liệu
+## Dataset
 
-Bộ dữ liệu được sử dụng để huấn luyện mô hình có thể tìm thấy tại [Bộ dữ liệu Quick Draw](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn). Ở đây tôi chỉ chọn 5 tệp cho 5 danh mục.
+The dataset used to train the model can be found at [Quick Draw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/sketchrnn).
+Only 5 files for 5 categories are selected here.
 
-## Yêu cầu hệ thống
+## System Requirements
 
-- Python 3.7+
-- Webcam
-- Đủ ánh sáng để nhận diện tay
+* Python 3.7+
+* Webcam
+* Good lighting for hand recognition
